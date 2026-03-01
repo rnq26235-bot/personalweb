@@ -3,124 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elegant Abayas</title>
+<title>Ruqaya Nasser | Personal Website</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-    <div class="logo">Elegant Abayas</div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#cart">Cart 🛒</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="hero">
+    <div class="overlay-box">
+        
+        <img src="imgcv.JPG" alt="Profile" class="profile-img">
 
-<!-- HERO -->
-<section class="hero" id="home">
-    <h1>Elegant Abayas for Every Occasion</h1>
-    <p>Discover premium abayas designed for elegance and comfort.</p>
-</section>
+        <h1>Hi! I’m Ruqaya Nasser </h1>
+        <p>Mass Communication – Public Relations</p>
+        <p><strong>Say hello!</strong></p>
 
-<!-- PRODUCTS SECTION -->
-<section class="products" id="products">
-<h2>Our Products</h2>
-<div class="product-grid">
+        <div class="email-form">
+            <input type="email" placeholder="Your email">
+            <button>Submit</button>
+        </div>
 
-<!-- Product 1 -->
-<div class="product-card">
-<img src="imgdownload (1).jpg" alt="Abaya 1">
-<h3>Classic Black Abaya</h3>
-<p>Elegant black abaya with premium fabric, perfect for daily wear or special events.</p>
-<p class="price">$120</p>
-<button class="add-to-cart-btn" data-name="Classic Black Abaya" data-price="120">Add to Cart</button>
+    </div>
 </div>
-
-<!-- Product 2 -->
-<div class="product-card">
-<img src="imgAlberta Ferretti Sequin-embellished Double-breasted Maxi Dress - Black.jpg" alt="Abaya 2">
-<h3>Sequin Embellished Abaya</h3>
-<p>Luxury sequin embellished abaya for evening occasions. Comfortable and stylish.</p>
-<p class="price">$180</p>
-<button class="add-to-cart-btn" data-name="Sequin Embellished Abaya" data-price="180">Add to Cart</button>
-</div>
-
-<!-- Product 3 -->
-<div class="product-card">
-<img src="imgElie Saab Fashion Collections For Women _ Moda Operandi.jpg" alt="Abaya 3">
-<h3>Casual Daily Abaya</h3>
-<p>Soft and lightweight abaya for daily wear. Available in multiple colors.</p>
-<p class="price">$90</p>
-<button class="add-to-cart-btn" data-name="Casual Daily Abaya" data-price="90">Add to Cart</button>
-</div>
-
-<!-- Product 4 -->
-<div class="product-card">
-<img src="imgdownload (2).jpg" alt="Abaya 4">
-<h3>Evening Elegant Abaya</h3>
-<p>Stylish evening abaya combining tradition and modern design.</p>
-<p class="price">$150</p>
-<button class="add-to-cart-btn" data-name="Evening Elegant Abaya" data-price="150">Add to Cart</button>
-</div>
-
-</div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-<h2>About Elegant Abayas</h2>
-<p>
-Elegant Abayas is a premium brand offering stylish and high-quality abayas for every occasion. 
-Each piece is thoughtfully designed to ensure elegance, comfort, and tradition.  
-Our products are Made in Bahrain.
-</p>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
-<p>Email: <strong>elegantabayas@gmail.com</strong></p>
-<p>Phone: <strong>+973 37333733</strong></p>
-<p>Instagram: <strong>@elegantabayas.bh</strong></p>
-</section>
-
-
-
-<!-- FOOTER -->
-<footer>
-<p>&copy; 2026 Elegant Abayas | All Rights Reserved</p>
-</footer>
-
-<!-- JS for Cart -->
-<script>
-let cart = [];
-const cartItems = document.getElementById("cart-items");
-const cartTotal = document.getElementById("cart-total");
-
-document.querySelectorAll(".add-to-cart-btn").forEach(button=>{
-    button.addEventListener("click", ()=>{
-        const name = button.dataset.name;
-        const price = parseFloat(button.dataset.price);
-        cart.push({name, price});
-        updateCart();
-        // Scroll to cart
-        document.getElementById("cart").scrollIntoView({behavior:"smooth"});
-    });
-});
-
-function updateCart(){
-    cartItems.innerHTML = "";
-   
-    
-}
-</script>
 
 </body>
 </html>
+

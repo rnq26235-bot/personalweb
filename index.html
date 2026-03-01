@@ -91,14 +91,7 @@ Our products are Made in Bahrain.
 <p>Instagram: <strong>@elegantabayas.bh</strong></p>
 </section>
 
-<!-- CART SECTION -->
-<section class="cart" id="cart">
-<h2>Your Shopping Cart</h2>
-<ul id="cart-items">
-<!-- items added via JS -->
-</ul>
-<p id="cart-total">Total: $0</p>
-</section>
+
 
 <!-- FOOTER -->
 <footer>
@@ -124,14 +117,8 @@ document.querySelectorAll(".add-to-cart-btn").forEach(button=>{
 
 function updateCart(){
     cartItems.innerHTML = "";
-    let total = 0;
-    cart.forEach((item,index)=>{
-        const li = document.createElement("li");
-        li.textContent = item.name + " - $" + item.price;
-        cartItems.appendChild(li);
-        total += item.price;
-    });
-    cartTotal.textContent = "Total: $" + total;
+   
+    
 }
 </script>
 
